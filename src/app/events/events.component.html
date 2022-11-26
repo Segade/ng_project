@@ -14,12 +14,12 @@ Select and register on the event you want to attend
 <tr>
 <th> Name </th> <th> Hour </th> <th> Day </th> <th> Location </th> <th> Town </th>
 </tr>
-<tr>
-<td>{{eventsList.Name}} </td> 
-<td>{{eventsList.Hour}} </td> 
-<td>{{eventsList.Day}} </td> 
-<td>{{eventsList.Location}} </td> 
-<td>{{eventsList.Town}} </td>
+<tr  *ngFor="let eachEvent of eventsList">
+<td>{{eachEvent.name}} </td> 
+<td>{{eachEvent.hour}} </td> 
+<td>{{eachEvent.day}} </td> 
+<td>{{eachEvent.location}} </td> 
+<td>{{eachEvent.town}} </td>
 
 </tr>
 </table>

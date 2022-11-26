@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpHeaders, HttpClientModule } from '@angular/common/http';
+
+ 
+
  
 import { EventsComponent } from './events/events.component';
 
@@ -9,7 +13,8 @@ import { EventsComponent } from './events/events.component';
     EventsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+HttpClientModule
   ],
   providers: [],
   bootstrap: [EventsComponent]
